@@ -1,0 +1,370 @@
+/* 
+    Author: Bishal Thapa
+    Date: 03/05/2022
+    Filename: catalog_20048874.css
+*/
+/*importing the fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&family=Lexend+Zetta&display=swap');
+
+cardStore {
+	background: linear-gradient(rgba(112, 125, 128, 0.734),rgba(107, 253, 241, 0.525)) , url(./Images/background.jpg) no-repeat fixed center;
+	background-size: cover;
+	font-family: 'Lexend Deca',Helvetica, Sans-serif;
+	filter: contrast(90%);
+}
+
+storeName,
+address,
+	email,
+	telephone,
+	fax,
+url {
+	display: flex;
+	justify-content: center;
+	font-size: 18px;
+	/*One out of four font size*/
+	color: black;
+	padding: 5px;
+	line-height: 0.8;
+	font-weight: bold;
+}
+url {
+    margin: 0 auto; 
+    width:10%;	
+	border-bottom: 5px solid rgb(36, 31, 36);	
+}
+
+
+storeName {
+	display: flex;
+	justify-content: center;
+	font-family:'Lexend Deca', Verdana, Geneva, Tahoma, sans-serif;
+	color: rgb(9, 92, 16);;
+	/*use of font color in RGB value*/
+	font-size: 50px;
+	padding: 30px;
+	font-weight: bold;
+}
+
+#Image {
+	background-image: url(Images/steak44.png);
+	/*displaying logo image*/
+	width: 200px;
+	height: 180px;
+	background-size: 200px;
+	position: absolute;
+	top: 1px;
+}
+#Image:hover{
+	
+		transform: scale(0.5);
+		transition: 1s;
+		cursor:pointer;	
+	}
+
+giftCards {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+cards {
+	display: block;
+	background: rgba(39, 38, 38, 0.35);
+	border: solid 4px #fff;   
+	border-radius: 20px;
+	transform: rotate(-0.1deg);
+	font-size: 30px;
+	margin: 20px;
+	width: 550px;
+	height: 1250px;
+	padding: 20px;
+	color: #f4f4f4;
+	float: left;
+}
+
+card_Cover {
+	background-size: 380px;
+	width: 380px;
+	height: 283px;
+	position: absolute;
+	margin-left: 20%;
+	margin-top: 20px;
+}
+
+Name,
+card_Type,
+card_amount,
+payment_Method,
+card_status,
+Genre,
+production_Company,
+validationDuration,
+shippingCost,
+shippingAddress,
+discount_Voucher,
+Card_code,
+tax,
+noOfUsers,
+Description {
+	display: block;
+	margin-left: 20%;
+	padding: 0 20px 0 20px;
+	font-weight: bold;
+	padding-left: 1%;
+	color: #fff;
+}
+
+
+Name {
+	font-family: 'Lexand',Verdana, Geneva, Tahoma, sans-serif;
+	color: #101820FF;
+	font-size: 40px;
+	padding: 10px;
+	font-weight: bold;
+	margin-top: 350px;
+    color: rgb(123, 165, 17);
+    margin-left: 25%;
+
+}
+Name::before,
+card_Type::before,
+card_amount::before,
+payment_Method::before,
+card_status::before,
+Genre::before,
+production_Company::before,
+validationDuration::before,
+shippingCost::before,
+shippingAddress::before,
+discount_Voucher::before,
+Card_code::before,
+tax::before,
+noOfUsers::before,
+Description::before
+{
+	font-weight: bold;
+	color: #101820FF;
+	font-family: 'Courier New', Courier, monospace;
+	display: list-item;
+	list-style-type: disc;
+}
+/*hovering effect in the text */
+card_Type:hover,
+card_amount:hover,
+payment_Method:hover,
+card_status:hover,
+Genre:hover,
+production_Company:hover,
+validationDuration:hover,
+shippingCost:hover,
+shippingAddress:hover,
+discount_Voucher:hover,
+Card_code:hover,
+tax:hover,
+noOfUsers:hover,
+Description:hover{
+	color: rgb(226, 200, 168);
+	cursor: pointer;
+}
+/*list-item is used in order to create a list */
+
+Name::before {
+	content: "Card Name: ";
+}
+
+card_Type::before {
+	content: "Type: ";
+}
+
+card_amount::before {
+	content: "Price: ";
+}
+payment_Method::before {
+	content: "Payment Method: ";
+}
+card_status::before {
+	content: "Card Status: ";
+}
+Genre::before {
+	content: "Genre: ";
+}
+production_Company::before {
+	content: "Production Company: ";
+}
+
+validationDuration::before {
+	content: "Validation Duration: ";
+}
+
+shippingCost::before {
+	content: "Shipping Cost: ";
+}
+
+shippingAddress::before {
+	content: "Shipping Address: ";
+}
+discount_Voucher::before {
+	content: "Discount Voucher: ";
+}
+
+Card_code::before {
+	content: "Code: "
+}
+
+tax::before {
+	content: "Tax: "
+}
+
+noOfUsers::before {
+	content: "Total Users: "
+}
+Description::before{
+	content: "Description: "
+}
+/*displaying image of each gift cards */
+#card_xbox {
+	background-image: url(./Images/Xbox.png);
+}
+
+#card_itunes{
+	background-image: url(./Images/Itunes.png);
+}
+
+#card_hulu {
+	background-image: url(./Images/Hulu.png);
+}
+
+#card_amazon {
+	background-image: url(./Images/Amazon.png);
+}
+
+#card_razer {
+	background-image: url(./Images/Razer.png);
+}
+
+#card_valentine{
+	background-image: url(./Images/valentine.png);
+}
+
+#card_playstation {
+	background-image: url(./Images/playstation.png);
+}
+
+#card_google {
+	background-image: url(./Images/google.png);
+}
+
+#card_ebay {
+	background-image: url(./Images/eBay.png);
+}
+
+#card_Netflix{
+	background-image: url(./Images/Netflix.png);
+}
+
+#card_roblox {
+	background-image: url(./Images/Roblox.png);
+}
+
+#card_shell {
+	background-image: url(./Images/Shell.png);
+}
+
+#card_steam {
+	background-image: url(./Images/steam.png);
+}
+
+#card_valorant {
+	background-image: url(./Images/valorant.png);
+}
+
+#card_Green {
+	background-image: url(./Images/greenhell.png);
+}
+
+#card_gentle {
+	background-image: url(./Images/gentleherd.png);
+}
+/*putting hover in gift cards images*/
+#card_xbox:hover,#card_itunes:hover,#card_hulu:hover,#card_amazon:hover,#card_razer:hover,#card_valentine:hover,#card_playstation:hover,
+#card_google:hover,#card_ebay:hover,#card_Netflix:hover,#card_roblox:hover,#card_shell:hover,#card_steam:hover,#card_valorant:hover,
+#card_Green:hover,#card_gentle:hover{
+	transform: scale(1.3);
+	transition: 0.8s;
+	cursor:pointer;	
+}
+/*adjusting the image for gift cards*/
+#card_shell {
+	background-size: 400px;
+	width: 380px;
+	height: 230px;
+	position: absolute;
+	margin-left: 20%;
+	margin-top: 20px;
+}
+#card_valorant{
+	background-size: 350px;
+	width: 360px;
+	height: 310px;
+	position: absolute;
+	margin-left: 20%;
+	margin-top: 20px;
+}
+#card_steam{
+	background-size: 400px;
+	width: 380px;
+	height: 350px;
+	position: absolute;
+	margin-left: 20%;
+	margin-top: 20px;
+}
+#card_valentine{
+	background-size: 320px;
+	width: 310px;
+	height: 280px;
+	position: absolute;
+	margin-left: 20%;
+	margin-top: 20px;
+}
+#card_roblox{
+	background-size: 350px;
+	width: 350px;
+	height: 310px;
+	position: absolute;
+	margin-left: 20%;
+	margin-top: 20px;
+}
+#card_amazon{
+	background-size: 363px;
+	width: 360px;
+	height: 280px;
+	position: absolute;
+	margin-left: 20%;
+	margin-top: 20px;
+}
+#card_Green{
+	background-size: 340px;
+	width: 340px;
+	height: 335px;
+	position: absolute;
+	margin-left: 20%;
+	margin-top: 20px;
+}
+#card_gentle{
+	background-size: 348px;
+	width: 340px;
+	height: 301px;
+	position: absolute;
+	margin-left: 20%;
+	margin-top: 20px;
+}
+
+Footer{
+	padding: 20px;
+	margin-top: 20px;
+	background-color: black;
+	color: #f4f4f4;
+	display: flex;
+	justify-content: center;
+}

@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- 
+    Author: Bishal Thapa
+    Date: 03/05/2022
+    Filename: catalog_20048874.xml
+--> 
+
+<?xml-stylesheet href="catalog_20048874.css"?>
+<!-- cardStore is the root element-->
+<cardStore description="Gift Card Store in London"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="catalog_20048874.xsd" >
+ <!-- cardStore is primarily divided into three child elements storeDetails, giftCards and Footer-->
+ <!-- storeDetails stores storeName, Logo, address, contact and url-->
+	<storeDetails>
+		<storeName>Steak 44</storeName>
+        <!-- Logo of the company is incorporated in above element is referenced in css file--> 
+        <!-- Also this element contains the address, contact and url -->
+        <logo id ="Image"/>
+		<address>London, United Kingdom</address>
+        <!-- There are three child elements inside the contact element.-->
+		<contact>
+			<email>steak44@gmail.com</email>
+			<telephone>(602) 271-4400</telephone>
+			<fax> 02-123-5897852</fax>
+		</contact>
+        <url>uk.steak44.com</url>
+    </storeDetails>
+    <!-- cardStore has many giftCards child elements-->
+    <giftCards>
+        <!-- giftCards element has cards child element. These child element includes futher information regarding particular gift card--> 
+        <cards id="card_1">
+            <card_Cover id="card_xbox"></card_Cover>
+            <Name>XBOX GOLD</Name>
+            <card_Type>Digital</card_Type>
+            <card_amount on_stock="yes">$50</card_amount>
+            <payment_Method>Paypal, Google Pay</payment_Method>
+            <Genre>Gaming</Genre>
+            <validationDuration>6 months</validationDuration>
+            <shippingCost>$5</shippingCost>
+            <shippingAddress>London</shippingAddress>
+            <discount_Voucher>20% off from DNB Bank</discount_Voucher>
+            <Card_code>2564</Card_code>
+            <tax>5 %</tax>
+            <noOfUsers>120</noOfUsers>
+        </cards>
+        <cards id="card_2">
+            <card_Cover id="card_itunes"></card_Cover>
+            <Name>Itunes Gift Card</Name>
+            <card_Type>Physical</card_Type>
+            <card_amount on_stock="yes">$100</card_amount>
+            <payment_Method>Credit Card, Cash, Bill Pay</payment_Method>
+            <Genre>Music, Movie, Apps</Genre>
+            <production_Company>Apple</production_Company>
+            <validationDuration>10 months</validationDuration>
+            <noOfUsers>554</noOfUsers>
+            <Description>iTunes gift card is used to make purchases in the iTunes Store without using a credit card.</Description>
+        </cards>
+        <cards id="card_3">
+            <card_Cover id="card_hulu"></card_Cover>
+            <Name>Hulu Gift Card</Name>
+            <card_Type>Digital</card_Type>
+            <card_amount on_stock="yes">$30</card_amount>
+            <payment_Method>Google Pay, Paypal, Samsung Pay</payment_Method>
+            <validationDuration>10 months</validationDuration>
+            <shippingCost>$10</shippingCost>
+            <shippingAddress>Liverpool</shippingAddress>
+            <discount_Voucher>10% off from The Bank of London.</discount_Voucher>
+            <Card_code>3658</Card_code>
+            <tax>2 %</tax>
+            <noOfUsers>550</noOfUsers>
+        </cards>
+        <cards id="card_4">
+            <card_Cover id="card_amazon"></card_Cover>
+            <Name>Amazon Gift Card</Name>
+            <card_Type>Digital</card_Type>
+            <card_amount on_stock="no">$30</card_amount>
+            <payment_Method>Google Pay, Paypal</payment_Method>
+            <Genre>Online Shopping</Genre>
+            <validationDuration>1 year</validationDuration>
+            <shippingCost>$5</shippingCost>
+            <shippingAddress>Manchester</shippingAddress>
+            <discount_Voucher>15% off from DNB Bank </discount_Voucher>
+            <Card_code>9878</Card_code>
+            <tax>8 %</tax>
+            <noOfUsers>558</noOfUsers>
+        </cards>
+        <cards id="card_5">
+            <card_Cover id="card_razer"></card_Cover>
+            <Name>Razer Gold</Name>
+            <card_Type>Digital</card_Type>
+            <card_amount on_stock="yes">$500</card_amount>
+            <payment_Method>Google Pay, Samsung Pay</payment_Method>
+            <Genre>Gaming</Genre>
+            <validationDuration>2 year</validationDuration>
+            <shippingCost>$10</shippingCost>
+            <shippingAddress>Hull</shippingAddress>
+            <discount_Voucher>55% off from Doha Bank</discount_Voucher>
+            <Card_code>5689</Card_code>
+            <tax>2%</tax>
+            <noOfUsers>154</noOfUsers>
+        </cards>
+        <cards id="card_6">
+            <card_Cover id="card_valentine"></card_Cover>
+            <Name>Valentine's Gift</Name>
+            <card_Type>Physical</card_Type>
+            <card_amount on_stock="yes">$50</card_amount>
+            <payment_Method>Credit Card, Cash</payment_Method>
+            <card_status>Active</card_status>
+            <Genre>Netflix, Uber</Genre>
+            <production_Company>Shop Me</production_Company>
+            <validationDuration>1 year</validationDuration>
+            <discount_Voucher>20% off from Danske Bank</discount_Voucher>
+            <noOfUsers>157</noOfUsers>
+            <Description>This card is specially made for couples in the occasion Valentine Day.</Description>
+        </cards>
+        <cards id="card_7">
+            <card_Cover id="card_playstation"></card_Cover>
+            <Name>Playstation Plus Card</Name>
+            <card_Type>Digital</card_Type>
+            <card_amount on_stock="yes">$200</card_amount>
+            <payment_Method>Paypal, Mobile Banking</payment_Method>
+            <validationDuration>Unlimited</validationDuration>
+            <shippingCost>$15</shippingCost>
+            <shippingAddress>Bristol</shippingAddress>
+            <discount_Voucher>35% off from Metro Bank</discount_Voucher>
+            <Card_code>5865</Card_code>
+            <tax>9%</tax>
+            <noOfUsers>600</noOfUsers>
+        </cards>
+        <cards id="card_8">
+            <card_Cover id="card_google"></card_Cover>
+            <Name>Google Play Gift Card</Name>
+            <card_Type>Physical</card_Type>
+            <card_amount on_stock="no">$500</card_amount>
+            <payment_Method>Credit Card, Cash, Bill Pay</payment_Method>
+            <card_status>Active</card_status>
+            <Genre>Music, Movie, Apps</Genre>
+            <production_Company>Google Inc.</production_Company>
+            <validationDuration>Unlimited</validationDuration>
+            <discount_Voucher>40% off from Metro Bank</discount_Voucher>
+            <noOfUsers>681</noOfUsers>
+            <Description>It can be used to pay for apps, music, and more.</Description>
+        </cards>
+        <cards id="card_9">
+            <card_Cover id="card_ebay"></card_Cover>
+            <Name>eBay Gift Card</Name>
+            <card_Type>Digital</card_Type>
+            <card_amount on_stock="yes">$50</card_amount>
+            <payment_Method>Samsung Pay, Paypal</payment_Method>
+            <Genre>Purchasing Items</Genre>
+            <validationDuration>6 months</validationDuration>
+            <shippingCost>$12</shippingCost>
+            <shippingAddress>Newcastle</shippingAddress>
+            <discount_Voucher>5% off from Danske Bank</discount_Voucher>
+            <Card_code>55665</Card_code>
+            <tax>12%</tax>
+            <noOfUsers>687</noOfUsers>
+        </cards>
+        <cards id="card_10">
+            <card_Cover id="card_Netflix"></card_Cover>
+            <Name>Netflix Gift Card</Name>
+            <card_Type>Digital</card_Type>
+            <card_amount on_stock="yes">$20</card_amount>
+            <payment_Method>Mobile Banking, Paypal, Google Pay</payment_Method>
+            <validationDuration>2 months</validationDuration>
+            <shippingCost>$11</shippingCost>
+            <shippingAddress>Plymouth</shippingAddress>
+            <discount_Voucher>12% off from DNB Bank</discount_Voucher>
+            <Card_code>6685</Card_code>
+            <tax>10%</tax>
+            <noOfUsers>600</noOfUsers>
+        </cards>
+        <cards id="card_11">
+            <card_Cover id="card_roblox"></card_Cover>
+            <Name>Roblox Unlimited Card</Name>
+            <card_Type>Digital</card_Type>
+            <card_amount on_stock="yes">$150</card_amount>
+            <payment_Method>Paypal, Google Pay, Samsung Pay</payment_Method>
+            <validationDuration>Unlimited</validationDuration>
+            <shippingCost>$15</shippingCost>
+            <shippingAddress>Edinburgh</shippingAddress>
+            <discount_Voucher>55% off from Doha Bank</discount_Voucher>
+            <Card_code>8978</Card_code>
+            <tax>15%</tax>
+            <noOfUsers>125</noOfUsers>
+        </cards>
+        <cards id="card_12">
+            <card_Cover id="card_shell"></card_Cover>
+            <Name>Shell Gift Card</Name>
+            <card_Type>Physical</card_Type>
+            <card_amount on_stock="no">$120</card_amount>
+            <payment_Method>Credit Card, Cash, Bill Pay</payment_Method>
+            <card_status>Active</card_status>
+            <Genre>Gasoline, Auto Supplies</Genre>
+            <production_Company>Shell Company</production_Company>
+            <validationDuration>5 months</validationDuration>
+            <discount_Voucher>10% off from Bank ABC</discount_Voucher>
+            <noOfUsers>265</noOfUsers>
+            <Description>It can be used to purchase gasoline and auto supplies at Shell stations nationwide.</Description>
+        </cards>
+        <cards id="card_13">
+            <card_Cover id="card_steam"></card_Cover>
+            <Name>Steam Gift Card</Name>
+            <card_Type>Digital</card_Type>
+            <card_amount on_stock="yes">$110</card_amount>
+            <payment_Method>Google Pay, Paypal</payment_Method>
+            <Genre>Game, Software</Genre>
+            <validationDuration>2 months</validationDuration>
+            <shippingCost>$10</shippingCost>
+            <shippingAddress>Wales</shippingAddress>
+            <discount_Voucher>54% off from Lloyds Bank</discount_Voucher>
+            <Card_code>5655</Card_code>
+            <tax>10%</tax>
+            <noOfUsers>656</noOfUsers>
+        </cards>
+        <cards id="card_14">
+            <card_Cover id="card_valorant"></card_Cover>
+            <Name>Valorant</Name>
+            <card_Type>Digital</card_Type>
+            <card_amount on_stock="no">$258</card_amount>
+            <payment_Method>Paypal, samsung Pay</payment_Method>
+            <Genre>Gaming</Genre>
+            <validationDuration>2 months</validationDuration>
+            <shippingCost>$10</shippingCost>
+            <shippingAddress>Birmingham</shippingAddress>
+            <discount_Voucher>54% off from ING Bank</discount_Voucher>
+            <Card_code>000256</Card_code>
+            <tax>16%</tax>
+            <noOfUsers>464</noOfUsers>
+        </cards>
+        <cards id="card_15">
+            <card_Cover id="card_Green"></card_Cover>
+            <Name>Green Hell PC</Name>
+            <card_Type>Digital</card_Type>
+            <card_amount on_stock="yes">$500</card_amount>
+            <payment_Method>Google Pay, Paypal, Samsung Pay</payment_Method>
+            <validationDuration>Unlimited</validationDuration>
+            <shippingCost>$15</shippingCost>
+            <shippingAddress>Ireland</shippingAddress>
+            <discount_Voucher>15% off from Bank Indonesia</discount_Voucher>
+            <Card_code>568</Card_code>
+            <tax>3%</tax>
+            <noOfUsers>159</noOfUsers>
+        </cards>
+        <cards id="card_16">
+            <card_Cover id="card_gentle"></card_Cover>
+            <Name>Gentle Herd Gift Card</Name>
+            <card_Type>Physical</card_Type>
+            <card_amount on_stock="no">$210</card_amount>
+            <payment_Method>Credit Card, Cash, Bill Pay</payment_Method>
+            <card_status>Active</card_status>
+            <Genre>Shopping</Genre>
+            <production_Company>Gentle Herd</production_Company>
+            <validationDuration>1 year</validationDuration>
+            <discount_Voucher>25% off from Lloyds Bank</discount_Voucher>
+            <noOfUsers>138</noOfUsers>
+            <Description>It gives flexibility to buy whatever your want.</Description>
+        </cards>
+    </giftCards>
+    <!-- Footer element stores information regrading Copyright-->
+    <Footer>Steak 44 | Copyright  &#xA9; 2022</Footer>
+</cardStore>

@@ -1,0 +1,81 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="cardStore">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="storeDetails">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="storeName" type="xs:string" />
+                            <xs:element name="logo">
+                                <xs:complexType>
+                                    <xs:attribute name="id" type="xs:string" use="required" />
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="address" type="xs:string" />
+                            <xs:element name="contact">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="email" type="xs:string" />
+                                        <xs:element name="telephone" type="xs:string" />
+                                        <xs:element name="fax" type="xs:NMTOKEN" />
+                                    </xs:sequence>
+                                 </xs:complexType>
+                            </xs:element>
+                            <xs:element name="url" type="xs:string" />
+                        </xs:sequence>
+                    </xs:complexType>
+                 </xs:element>
+                <xs:element name="giftCards" >
+                        <xs:complexType>
+                            <xs:sequence>
+                                <xs:element name="cards" minOccurs="1" maxOccurs="unbounded">
+                                     <xs:complexType>
+                                        <xs:sequence>
+                                            <xs:element name="card_Cover">
+                                                <xs:complexType>
+                                                    <xs:attribute name="id" type="xs:ID" use="required" />
+                                                </xs:complexType>
+                                            </xs:element>
+                                            <xs:element name="Name" type="xs:string" />
+                                            <xs:element name="card_Type" type="xs:string" />
+                                            <xs:element name="card_amount" minOccurs="1" maxOccurs="unbounded">
+                                                <xs:complexType>
+                                                    <xs:simpleContent>
+                                                        <xs:extension base="xs:string">
+                                                            <xs:attribute name="on_stock" use="required">
+                                                                <xs:simpleType>
+                                                                    <xs:restriction base="xs:string">
+                                                                        <xs:enumeration value="no" />
+                                                                        <xs:enumeration value="yes" />
+                                                                    </xs:restriction>
+                                                                </xs:simpleType>
+                                                            </xs:attribute>
+                                                         </xs:extension>
+                                                    </xs:simpleContent>
+                                                </xs:complexType>
+                                                </xs:element>
+                                            <xs:element name="payment_Method" type="xs:string" />
+                                            <xs:element name="card_status" minOccurs="0" maxOccurs="1" type="xs:string" />
+                                            <xs:element name="Genre" minOccurs="0" maxOccurs="1" type="xs:string" />
+                                            <xs:element name="production_Company" minOccurs="0" maxOccurs="1" type="xs:string" />
+                                            <xs:element name="validationDuration" type="xs:string" />
+                                            <xs:element name="shippingCost" minOccurs="0" maxOccurs="1" type="xs:string" />
+                                            <xs:element name="shippingAddress" minOccurs="0" maxOccurs="1" type="xs:string" />
+                                            <xs:element name="discount_Voucher" minOccurs="0" maxOccurs="1" type="xs:string" />
+                                            <xs:element name="Card_code" minOccurs="0" maxOccurs="1" type="xs:string" />
+                                            <xs:element name="tax" minOccurs="0" maxOccurs="1" type="xs:string" />
+                                            <xs:element name="noOfUsers" type="xs:string" />
+                                            <xs:element name="Description" minOccurs="0" maxOccurs="1" type="xs:string" />
+                                        </xs:sequence>
+                                         <xs:attribute name="id" type="xs:string" use="required" />
+                                    </xs:complexType>
+                                </xs:element>
+                            </xs:sequence>
+                        </xs:complexType>
+                    </xs:element>
+                <xs:element name="Footer" type="xs:string" />
+            </xs:sequence>
+            <xs:attribute name="description" type="xs:string" fixed="Gift Card Store in London" use="required" />
+        </xs:complexType>
+    </xs:element>
+</xs:schema>
